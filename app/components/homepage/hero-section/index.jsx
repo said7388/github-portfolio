@@ -1,6 +1,7 @@
 // @flow strict
 
 import { personalData } from "@/utils/data/personal-data";
+import { skillsData } from "@/utils/data/skills";
 import Image from "next/image";
 import Link from "next/link";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
@@ -10,7 +11,7 @@ import { RiContactsFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
 
 function HeroSection({ profile }) {
-  
+
   return (
     <section className="relative flex flex-col items-center justify-between py-4 lg:py-12">
       <div className="grid grid-cols-1 items-center md:grid-cols-2 lg:gap-12 gap-y-8">
@@ -139,25 +140,17 @@ function HeroSection({ profile }) {
               <div className="ml-4 lg:ml-8 mr-2">
                 <span className=" text-white">skills:</span>
                 <span className="text-gray-400">{`['`}</span>
-                <span className="text-cyan-400">React</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-cyan-400">NextJS</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-cyan-400">Redux</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-cyan-400">Express</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-cyan-400">NestJS</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-cyan-400">MySql</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-cyan-400">MongoDB</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-cyan-400">Postgres</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-cyan-400">Docker</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-cyan-400">AWS</span>
+                {
+                  skillsData.map((skill, i) => (
+                    <>
+                      <span className="text-cyan-400">{skill}</span>
+                      {
+                        i !== skillsData.length - 1 &&
+                        <span className="text-gray-400">{"', '"}</span>
+                      }
+                    </>
+                  ))
+                }
                 <span className="text-gray-400">{"'],"}</span>
               </div>
               <div>
