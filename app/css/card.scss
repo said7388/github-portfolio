@@ -33,7 +33,7 @@
   position: absolute;
   inset: -5px;
   border: 3px solid transparent;
-  border-radius: 12px;
+  border-radius: 8px;
   mask: linear-gradient(#0000, #0000),
     conic-gradient(from calc((var(--start) - (var(--spread) * 0.5)) * 1deg),
       #000 0deg,
@@ -50,11 +50,11 @@
   inset: 0;
   border: 2px solid transparent;
   content: "";
-  border-radius: 12px;
+  border-radius: 8px;
   pointer-events: none;
   background: #84738c;
   background-attachment: fixed;
-  border-radius: 12px;
+  border-radius: 8px;
   mask: linear-gradient(#0000, #0000),
     conic-gradient(from calc(((var(--start) + (var(--spread) * 0.25)) - (var(--spread) * 1.5)) * 1deg),
       #ffffff26 0deg,
@@ -79,7 +79,7 @@
       #f626af 288.0000042915344deg,
       #fafafa 1turn);
   background-attachment: fixed;
-  border-radius: 12px;
+  border-radius: 8px;
   opacity: var(--active, 0);
   transition: opacity 1s;
   --alpha: 0;
