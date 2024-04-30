@@ -22,7 +22,6 @@ function Contributions() {
           blockSize={14}
         />
       </div>
-
     </div>
   );
 };
