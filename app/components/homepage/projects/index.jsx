@@ -6,7 +6,7 @@ import ProjectCard from './project-card';
 const Projects = ({ projects, profile }) => {
 
   return (
-    <div id="experience" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
+    <div id="projects" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
       <div className="flex justify-center -mt-6">
         <div className="flex  items-center h-12">
           <span className="w-20 h-[1px] bg-gradient-to-r from-transparent to-violet-500"></span>

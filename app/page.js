@@ -2,6 +2,7 @@ import { personalData } from "@/utils/data/personal-data";
 import Blog from "./components/homepage/blog";
 import HeroSection from "./components/homepage/hero-section";
 import Projects from "./components/homepage/projects";
+import GitStats from "./components/homepage/stats";
 
 async function getData() {
   const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`)
@@ -33,7 +34,6 @@ async function getGitProjects() {
   return await res.json();
 };
 
-
 export default async function Home() {
   const blogs = await getData();
   const profile = await getGitProfile();
@@ -46,6 +46,7 @@ export default async function Home() {
         projects={projects.items}
         profile={profile}
       />
+      <GitStats />
       <Blog blogs={blogs} />
     </>
   )

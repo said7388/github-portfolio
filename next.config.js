@@ -5,6 +5,7 @@ module.exports = {
     includePaths: [path.join(__dirname, 'styles')],
   },
   images: {
-    domains: ['res.cloudinary.com', 'media.dev.to', 'avatars.githubusercontent.com']
+    domains: ['media.dev.to', 'avatars.githubusercontent.com', 'github-readme-stats.vercel.app', 'github-readme-streak-stats.herokuapp.com', 'stardev.io', 'github-profile-summary-cards.vercel.app'],
+    dangerouslyAllowSVG: true,
   }
 }
