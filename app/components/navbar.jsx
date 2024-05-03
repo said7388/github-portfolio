@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <nav className="bg-transparent">
       <div className="flex items-center justify-between py-5">
-        <div className="flex flex-shrink-0 items-center">
+        <div className="flex flex-shrink-0 items-center opacity-0 md:opacity-100">
           <Link
             href="/"
             className=" text-primary-icon text-3xl font-bold">
