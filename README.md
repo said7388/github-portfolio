@@ -1,38 +1,14 @@
-# Developer Portfolio
+# GitHub Portfolio
 
-### Are you struggling to create a professional portfolio website? Look no further! You can use the Developer Portfolio template and create your very own personalized portfolio today! My website is designed to be user-friendly and easily customizable, making it perfect for both developers and freelancers.
+### If you're struggling to create a portfolio website that looks professional, you don't have to search any further. You can use this GitHub Portfolio template to create your very own personalized portfolio using just your GitHub username! The website is designed to be user-friendly and easily customizable, which makes it an ideal solution for developers and freelancers alike.
 
 ---
 
 # Demo :movie_camera:
 
-![](./public/image/screen.png)
+![](./public/image.png)
 
-## View live preview [here](https://abusaid.netlify.app/).
-
----
-
-## Table of Contents :scroll:
-
-- [Sections](#sections-bookmark)
-- [Demo](#demo-movie_camera)
-- [Installation](#installation-arrow_down)
-- [Getting Started](#getting-started-dart)
-- [Usage](#usage-joystick)
-- [Packages Used](#packages-used-package)
-
----
-
-# Sections :bookmark:
-
-- HERO SECTION
-- ABOUT ME
-- EXPERIENCE
-- SKILLS
-- PROJECTS
-- EDUCATION
-- BLOG
-- CONTACTS
+## View live preview [here](https://my-github-portfolio.netlify.app/)
 
 ---
 
@@ -59,9 +35,9 @@ git --version
 To Fork the repo click on the fork button at the top right of the page. Once the repo is forked open your terminal and perform the following commands
 
 ```
-git clone https://github.com/<YOUR GITHUB USERNAME>/developer-portfolio.git
+git clone https://github.com/<YOUR GITHUB USERNAME>/github-portfolio.git
 
-cd developer-portfolio
+cd github-portfolio
 ```
 
 ### Install packages from the root directory
@@ -86,41 +62,45 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 # Usage :joystick:
 
-Goto [emailjs.com](https://www.emailjs.com/) and create a new account for the mail sending. In free trial you will get 200 mail per month. After setup `emailjs` account, Please create a new `.env` file from `.env.example` file.
+If you want to use Google Analytics, Please create a new `.env` file from `.env.example` file and provide the value.
 
 Eg:
 
 ```env
-NEXT_PUBLIC_EMAILJS_SERVICE_ID =
-NEXT_PUBLIC_EMAILJS_TEMPLATE_ID =
-NEXT_PUBLIC_EMAILJS_PUBLIC_KEY =
+NEXT_PUBLIC_GTM = ""
 ```
 
-### Then, Customize data in the `utils/data` [folder](https://github.com/said7388/developer-portfolio/tree/main/utils/data).
+### Now, you have to customize user data in the `data` [folder](https://github.com/said7388/developer-portfolio/tree/main/data).
 
 Eg:
 
 ```javascript
-export const personalData = {
-  name: "ABU SAID",
-  profile: "/profile.png",
-  designation: "Full-Stack Software Developer",
-  description: "My name is ABU SAID....",
-  email: "abusaid7388@gmail.com",
-  phone: "+8801608797655",
-  address: "Dhaka, Bangladesh",
+export const userData = {
+  githubUser: "said7388",
+  devUsername: "said7388",
   github: "https://github.com/said7388",
   facebook: "https://www.facebook.com/abusaid.riyaz/",
   linkedIn: "https://www.linkedin.com/in/abu-said-bd/",
   twitter: "https://twitter.com/said7388",
   stackOverflow: "https://stackoverflow.com/users/16840768/abu-said",
   leetcode: "https://leetcode.com/said3812/",
-  devUsername: "said7388",
-  resume: "...",
+  resume:
+    "https://drive.google.com/file/d/1eyutpKFFhJ9X-qpQGKhUNnVRkB5Wer00/view?usp=sharing",
+  skills: [
+    "React",
+    "NextJS",
+    "Redux",
+    "Express",
+    "NestJS",
+    "MySql",
+    "MongoDB",
+    "Postgres",
+    "Docker",
+    "AWS",
+  ],
+  timezone: "+6",
 };
 ```
-
-`devUsername` Used for fetching blog from `dev.to`.
 
 ---
 
@@ -128,15 +108,14 @@ export const personalData = {
 
 # Packages Used :package:
 
-| Used Package List  |
-| :----------------: |
-|        next        |
-|  @emailjs/browser  |
-|    lottie-react    |
-| react-fast-marquee |
-|    react-icons     |
-|   react-toastify   |
-|        sass        |
-|    tailwindcss     |
+|   Used Package List   |
+| :-------------------: |
+|         next          |
+|  @next/third-parties  |
+|         axios         |
+|      react-icons      |
+| react-github-calendar |
+|         sass          |
+|      tailwindcss      |
 
 ---
