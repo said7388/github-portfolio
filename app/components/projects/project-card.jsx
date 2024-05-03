@@ -1,4 +1,4 @@
-import { colors } from "@/utils/data/colors";
+import { colors } from "@/data/colors";
 import Link from "next/link";
 import { FaRegStar } from "react-icons/fa";
 import { FaCodeFork } from "react-icons/fa6";

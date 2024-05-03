@@ -1,7 +1,6 @@
 // @flow strict
 
-import { personalData } from "@/utils/data/personal-data";
-import { skillsData } from "@/utils/data/skills";
+import { userData } from "@/data/user-data";
 import Image from "next/image";
 import Link from "next/link";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
@@ -30,35 +29,35 @@ function HeroSection({ profile }) {
 
           <div className="w-full flex justify-center items-center gap-5">
             <Link
-              href={personalData.github}
+              href={userData.github}
               target='_blank'
               className="transition-all text-teal-500 hover:scale-125 duration-300"
             >
               <BsGithub size={24} />
             </Link>
             <Link
-              href={personalData.linkedIn}
+              href={userData.linkedIn}
               target='_blank'
               className="transition-all text-teal-500 hover:scale-125 duration-300"
             >
               <BsLinkedin size={24} />
             </Link>
             <Link
-              href={personalData.facebook}
+              href={userData.facebook}
               target='_blank'
               className="transition-all text-teal-500 hover:scale-125 duration-300"
             >
               <FaFacebook size={24} />
             </Link>
             <Link
-              href={personalData.leetcode}
+              href={userData.leetcode}
               target='_blank'
               className="transition-all text-teal-500 hover:scale-125 duration-300"
             >
               <SiLeetcode size={24} />
             </Link>
             <Link
-              href={personalData.twitter}
+              href={userData.twitter}
               target='_blank'
               className="transition-all text-teal-500 hover:scale-125 duration-300"
             >
@@ -67,7 +66,7 @@ function HeroSection({ profile }) {
           </div>
 
           <div className="w-full justify-center flex items-center gap-3 mt-6">
-            <Link target="_blank" href={personalData.resume} className="bg-gradient-to-r to-pink-500 from-violet-600 p-[1px] rounded-full transition-all duration-300 hover:from-pink-500 hover:to-violet-600">
+            <Link target="_blank" href={userData.resume} className="bg-gradient-to-r to-pink-500 from-violet-600 p-[1px] rounded-full transition-all duration-300 hover:from-pink-500 hover:to-violet-600">
               <button className="px-3 text-xs md:px-4 py-2 md:py-2.5 bg-[#0d1224] rounded-full border-none text-center font-medium uppercase tracking-wider text-[#ffff] no-underline transition-all duration-200 ease-out  md:font-semibold flex items-center gap-1 hover:gap-3">
                 <span>Get Resume</span>
                 <MdDownload size={16} />
@@ -134,11 +133,11 @@ function HeroSection({ profile }) {
                 <span className=" text-white">skills:</span>
                 <span className="text-gray-400">{`['`}</span>
                 {
-                  skillsData.map((skill, i) => (
+                  userData.skills.map((skill, i) => (
                     <>
                       <span className="text-cyan-400">{skill}</span>
                       {
-                        i !== skillsData.length - 1 &&
+                        i !== userData.skills.length - 1 &&
                         <span className="text-gray-400">{"', '"}</span>
                       }
                     </>

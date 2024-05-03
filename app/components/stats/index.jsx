@@ -1,7 +1,7 @@
 // @flow strict
-import { personalData } from "@/utils/data/personal-data";
+import { userData } from "@/data/user-data";
 import Image from "next/image";
-import GlowCard from "../../helper/glow-card";
+import GlowCard from "../helper/glow-card";
 
 function GitStats() {
   return (
@@ -20,7 +20,7 @@ function GitStats() {
         <div className="md:col-span-2">
           <GlowCard identifier="profile-details">
             <Image
-              src={`http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=${personalData.githubUser}&theme=algolia`}
+              src={`http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=${userData.githubUser}&theme=algolia`}
               width={1080}
               height={520}
               alt="github profile-details"
@@ -32,7 +32,7 @@ function GitStats() {
         <>
           <GlowCard identifier="github-stats">
             <Image
-              src={`https://github-readme-stats.vercel.app/api?username=${personalData.githubUser}&show_icons=true&include_all_commits=true&theme=algolia&hide_border=true`}
+              src={`https://github-readme-stats.vercel.app/api?username=${userData.githubUser}&show_icons=true&include_all_commits=true&theme=algolia&hide_border=true`}
               width={1080}
               height={520}
               alt="github stats"
@@ -40,7 +40,7 @@ function GitStats() {
           </GlowCard>
           <GlowCard identifier="github-stats-2">
             <Image
-              src={`https://github-readme-stats.vercel.app/api?username=${personalData.githubUser}&show_icons=true&include_all_commits=true&theme=algolia&hide_border=true&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage&hide=stars,commits,prs,issues,contribs`}
+              src={`https://github-readme-stats.vercel.app/api?username=${userData.githubUser}&show_icons=true&include_all_commits=true&theme=algolia&hide_border=true&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage&hide=stars,commits,prs,issues,contribs`}
               width={1080}
               height={520}
               alt="github stats"
@@ -52,7 +52,7 @@ function GitStats() {
         <>
           <GlowCard identifier="repos-per-language">
             <Image
-              src={`http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=${personalData.githubUser}&theme=algolia`}
+              src={`http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=${userData.githubUser}&theme=algolia`}
               width={1080}
               height={560}
               alt="github repos-per-language"
@@ -62,7 +62,7 @@ function GitStats() {
 
           <GlowCard identifier="most-commit-language">
             <Image
-              src={`http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=${personalData.githubUser}&theme=algolia`}
+              src={`http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=${userData.githubUser}&theme=algolia`}
               width={1080}
               height={560}
               alt="github most-commit-language"
@@ -73,7 +73,7 @@ function GitStats() {
 
         <GlowCard identifier="top-langs">
           <Image
-            src={`https://github-readme-stats.vercel.app/api/top-langs/?username=${personalData.githubUser}&layout=compact&theme=algolia&hide_border=true&&langs_count=8`}
+            src={`https://github-readme-stats.vercel.app/api/top-langs/?username=${userData.githubUser}&layout=compact&theme=algolia&hide_border=true&&langs_count=8`}
             width={1080}
             height={560}
             alt="github top-langs"
@@ -83,7 +83,7 @@ function GitStats() {
         <div className="h-full">
           <GlowCard identifier="productive-time">
             <Image
-              src={`http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=${personalData.githubUser}&theme=algolia&utcOffset=8`}
+              src={`http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=${userData.githubUser}&theme=algolia&utcOffset=8`}
               width={1080}
               height={560}
               alt="github productive-time"
@@ -93,14 +93,14 @@ function GitStats() {
         </div>
 
         <Image
-          src={`https://stardev.io/developers/${personalData.githubUser}/badge/languages/locality.svg`}
+          src={`https://stardev.io/developers/${userData.githubUser}/badge/languages/locality.svg`}
           width={1080}
           height={520}
           alt="github locality"
           className="rounded-lg"
         />
         <Image
-          src={`https://stardev.io/developers/${personalData.githubUser}/badge/languages/global.svg`}
+          src={`https://stardev.io/developers/${userData.githubUser}/badge/languages/global.svg`}
           width={1080}
           height={520}
           alt="github global"
@@ -110,7 +110,7 @@ function GitStats() {
         <div className="md:col-span-2 flex justify-center">
           <GlowCard identifier="streak">
             <Image
-              src={`https://github-readme-streak-stats.herokuapp.com/?user=${personalData.githubUser}&theme=algolia&hide_border=true`}
+              src={`https://github-readme-streak-stats.herokuapp.com/?user=${userData.githubUser}&theme=algolia&hide_border=true`}
               width={1080}
               height={520}
               alt="github streak"

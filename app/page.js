@@ -1,11 +1,11 @@
-import { personalData } from "@/utils/data/personal-data";
-import Contributions from "./components/homepage/contributions";
-import HeroSection from "./components/homepage/hero-section";
-import Projects from "./components/homepage/projects";
-import GitStats from "./components/homepage/stats";
+import { userData } from "@/data/user-data";
+import Contributions from "./components/contributions";
+import HeroSection from "./components/hero-section";
+import Projects from "./components/projects";
+import GitStats from "./components/stats";
 
 async function getGitProfile() {
-  const res = await fetch(`https://api.github.com/users/${personalData.githubUser}`)
+  const res = await fetch(`https://api.github.com/users/${userData.githubUser}`)
   if (!res.ok) {
     throw new Error('Failed to fetch data')
   }
@@ -14,7 +14,7 @@ async function getGitProfile() {
 };
 
 async function getGitProjects() {
-  const res = await fetch(`https://api.github.com/search/repositories?q=user:${personalData.githubUser}+fork:false&sort=stars&per_page=10&type=Repositories`)
+  const res = await fetch(`https://api.github.com/search/repositories?q=user:${userData.githubUser}+fork:false&sort=stars&per_page=10&type=Repositories`)
 
   if (!res.ok) {
     throw new Error('Failed to fetch data')

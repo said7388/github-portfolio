@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { FaLongArrowAltRight } from 'react-icons/fa';
-import GlowCard from '../../helper/glow-card';
+import GlowCard from '../helper/glow-card';
 import ProjectCard from './project-card';
 
 const Projects = ({ projects, profile }) => {

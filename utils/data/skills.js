@@ -1,1 +1,0 @@
-export const skillsData = ['React', 'NextJS', 'Redux', 'Express', 'NestJS', 'MySql', 'MongoDB', 'Postgres', 'Docker', 'AWS'];

@@ -1,5 +1,5 @@
 // @flow strict
-import { personalData } from "@/utils/data/personal-data";
+import { userData } from "@/data/user-data";
 import Link from "next/link";
 
 
@@ -11,7 +11,7 @@ function Navbar() {
           <Link
             href="/"
             className=" text-primary-icon text-3xl font-bold">
-            @{personalData.githubUser}
+            @{userData.githubUser}
           </Link>
         </div>
 

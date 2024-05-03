@@ -16,7 +16,10 @@ export default function RootLayout({ children }) {
         </main>
         <Footer />
       </body>
-      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM} />
+      {
+        process.env.NEXT_PUBLIC_GTM &&
+        <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM} />
+      }
     </html>
   )
 };
