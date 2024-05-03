@@ -6,7 +6,7 @@
 
 # Demo :movie_camera:
 
-![](./public/image.png)
+![](./public/git%20.png)
 
 ## View live preview [here](https://my-github-portfolio.netlify.app/)
 

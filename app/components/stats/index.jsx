@@ -12,13 +12,15 @@ function GitStats() {
       <div className="py-8 grid grid-cols-1 md:grid-cols-2 gap-5">
         <div className="md:col-span-2">
           <GlowCard identifier="profile-details">
+            <div className="bg-primary-bg">
             <Image
               src={`http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=${userData.githubUser}&theme=algolia`}
               width={1080}
               height={520}
               alt="github profile-details"
-              className="rounded-lg"
+              className="rounded-lg "
             />
+            </div>
           </GlowCard>
         </div>
 
@@ -41,76 +43,6 @@ function GitStats() {
             />
           </GlowCard>
         </>
-
-        <>
-          <GlowCard identifier="repos-per-language">
-            <Image
-              src={`http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=${userData.githubUser}&theme=algolia`}
-              width={1080}
-              height={560}
-              alt="github repos-per-language"
-              className="rounded-lg lg:h-64 w-full bg-primary-bg"
-            />
-          </GlowCard>
-
-          <GlowCard identifier="most-commit-language">
-            <Image
-              src={`http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=${userData.githubUser}&theme=algolia`}
-              width={1080}
-              height={560}
-              alt="github most-commit-language"
-              className="rounded-lg lg:h-64 w-full bg-primary-bg"
-            />
-          </GlowCard>
-        </>
-
-        <GlowCard identifier="top-langs">
-          <Image
-            src={`https://github-readme-stats.vercel.app/api/top-langs/?username=${userData.githubUser}&layout=compact&theme=algolia&hide_border=true&&langs_count=8`}
-            width={1080}
-            height={560}
-            alt="github top-langs"
-            className="rounded-lg md:h-52 lg:h-64 w-full bg-primary-bg"
-          />
-        </GlowCard>
-        <div className="h-full">
-          <GlowCard identifier="productive-time">
-            <Image
-              src={`http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=${userData.githubUser}&theme=algolia&utcOffset=${userData.timezone}`}
-              width={1080}
-              height={560}
-              alt="github productive-time"
-              className="rounded-lg md:h-52 lg:h-64 w-full bg-primary-bg"
-            />
-          </GlowCard>
-        </div>
-
-        <Image
-          src={`https://stardev.io/developers/${userData.githubUser}/badge/languages/locality.svg`}
-          width={1080}
-          height={520}
-          alt="github locality"
-          className="rounded-lg"
-        />
-        <Image
-          src={`https://stardev.io/developers/${userData.githubUser}/badge/languages/global.svg`}
-          width={1080}
-          height={520}
-          alt="github global"
-          className="rounded-lg"
-        />
-
-        <div className="md:col-span-2 flex justify-center">
-          <GlowCard identifier="streak">
-            <Image
-              src={`https://github-readme-streak-stats.herokuapp.com/?user=${userData.githubUser}&theme=algolia&hide_border=true`}
-              width={1080}
-              height={520}
-              alt="github streak"
-              className="max-h-60 bg-primary-bg"
-            />
-          </GlowCard>
-        </div>
       </div>
     </div>
   );

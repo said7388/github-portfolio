@@ -1,7 +1,9 @@
 import { userData } from "@/data/user-data";
 import Contributions from "./components/contributions";
 import HeroSection from "./components/hero-section";
+import GitLanguage from "./components/language";
 import Projects from "./components/projects";
+import Rank from "./components/rank";
 import GitStats from "./components/stats";
 
 async function getGitProfile() {
@@ -30,11 +32,13 @@ export default async function Home() {
   return (
     <>
       <HeroSection profile={profile} />
+      <GitStats />
       <Projects
         projects={projects.items}
         profile={profile}
       />
-      <GitStats />
+      <GitLanguage />
+      <Rank />
       <Contributions />
     </>
   )
