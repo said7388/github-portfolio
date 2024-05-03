@@ -1,21 +1,14 @@
 import Link from 'next/link';
 import { FaLongArrowAltRight } from 'react-icons/fa';
 import GlowCard from '../helper/glow-card';
+import SectionTitle from '../helper/section-title';
 import ProjectCard from './project-card';
 
 const Projects = ({ projects, profile }) => {
 
   return (
     <div id="projects" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
-      <div className="flex justify-center -mt-6">
-        <div className="flex  items-center h-12">
-          <span className="w-20 h-[1px] bg-gradient-to-r from-transparent to-violet-500"></span>
-          <span className="bg-[#1a1443] w-fit text-white p-2 px-3 md:px-6 text-xl rounded-md">
-            Git Projects
-          </span>
-          <span className="w-20 h-[1px] bg-gradient-to-r from-violet-500 to-transparent"></span>
-        </div>
-      </div>
+      <SectionTitle title="Git Projects" />
 
       <div className="grid py-12 grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8">
         {
