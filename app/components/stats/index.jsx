@@ -9,7 +9,7 @@ function GitStats() {
     <div id="stats" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
       <SectionTitle title="GitHub Statistics" />
 
-      <div className="p-8 grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div className="py-8 grid grid-cols-1 md:grid-cols-2 gap-5">
         <div className="md:col-span-2">
           <GlowCard identifier="profile-details">
             <Image
@@ -76,7 +76,7 @@ function GitStats() {
         <div className="h-full">
           <GlowCard identifier="productive-time">
             <Image
-              src={`http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=${userData.githubUser}&theme=algolia&utcOffset=8`}
+              src={`http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=${userData.githubUser}&theme=algolia&utcOffset=${userData.timezone}`}
               width={1080}
               height={560}
               alt="github productive-time"
@@ -107,7 +107,7 @@ function GitStats() {
               width={1080}
               height={520}
               alt="github streak"
-              className="max-h-56 bg-primary-bg"
+              className="max-h-60 bg-primary-bg"
             />
           </GlowCard>
         </div>
