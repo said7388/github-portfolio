@@ -119,3 +119,7 @@ export const userData = {
 |      tailwindcss      |
 
 ---
+
+## Disclaimer
+
+In this repository, I have used some open source APIs. All credits go to the owners of those repositories.
