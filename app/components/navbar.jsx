@@ -5,7 +5,7 @@ import Link from "next/link";
 
 function Navbar() {
   return (
-    <nav className="bg-transparent">
+    <nav className="bg-transparent hidden md:block">
       <div className="flex items-center justify-between py-5">
         <div className="flex flex-shrink-0 items-center opacity-0 md:opacity-100">
           <Link
