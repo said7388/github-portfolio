@@ -56,7 +56,7 @@ function GitStats() {
               width={1080}
               height={560}
               alt="github repos-per-language"
-              className="rounded-lg lg:h-64 w-full bg-[#050f2c]"
+              className="rounded-lg lg:h-64 w-full bg-primary-bg"
             />
           </GlowCard>
 
@@ -66,7 +66,7 @@ function GitStats() {
               width={1080}
               height={560}
               alt="github most-commit-language"
-              className="rounded-lg lg:h-64 w-full bg-[#050f2c]"
+              className="rounded-lg lg:h-64 w-full bg-primary-bg"
             />
           </GlowCard>
         </>
@@ -77,7 +77,7 @@ function GitStats() {
             width={1080}
             height={560}
             alt="github top-langs"
-            className="rounded-lg md:h-52 lg:h-64 w-full bg-[#050f2c]"
+            className="rounded-lg md:h-52 lg:h-64 w-full bg-primary-bg"
           />
         </GlowCard>
         <div className="h-full">
@@ -87,7 +87,7 @@ function GitStats() {
               width={1080}
               height={560}
               alt="github productive-time"
-              className="rounded-lg md:h-52 lg:h-64 w-full bg-[#050f2c]"
+              className="rounded-lg md:h-52 lg:h-64 w-full bg-primary-bg"
             />
           </GlowCard>
         </div>
@@ -114,7 +114,7 @@ function GitStats() {
               width={1080}
               height={520}
               alt="github streak"
-              className="max-h-56 bg-[#050f2c]"
+              className="max-h-56 bg-primary-bg"
             />
           </GlowCard>
         </div>

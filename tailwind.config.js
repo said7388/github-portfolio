@@ -29,6 +29,13 @@ module.exports = {
           "4k": "1980px",
         },
       },
+
+      colors: {
+        "primary-title": "#00AEFF",
+        "primary-text": "#FFFFFF",
+        "primary-icon": "#2DDE98",
+        "primary-bg": "#050F2C",
+      },
     },
   },
   plugins: [],
